@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Verify TOTP</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+  <div class="container mt-5">
+    <h3 class="text-center">Verify TOTP</h3>
+    <form action="/verify-totp" method="POST">
+      <div class="mb-3">
+        <label for="totpCode" class="form-label">TOTP Code</label>
+        <input type="text" name="totpCode" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Verify</button>
+    </form>
+  </div>
+</body>
+</html>
